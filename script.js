@@ -26,4 +26,7 @@ function repeat () {
   if (userNumb != randNumb) {
     document.getElementById('results').innerHTML = ' '
   }
+  if (userNumb == randNumb) {
+    document.getElementById('results').innerHTML = ' '
+  }
 }
