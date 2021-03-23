@@ -10,12 +10,10 @@ document.getElementById('button2').addEventListener('click', repeat)
 function generate () {
   userNumb = document.getElementById('text1').value
   userNumb = parseInt(userNumb)
-
-// Now, it will generate a random integer.
+  // Now, it will generate a random integer.
   randNumb = Math.floor(Math.random() * 6) + 1
   randNumb = parseInt(randNumb)
-  
-// This script will need to compare the numbers, so it needs if statements.
+  // This script will need to compare the numbers, so it needs if statements.
   if (userNumb == randNumb) {
     document.getElementById('results').innerHTML = 'Numbers matched! You win!'
   }
