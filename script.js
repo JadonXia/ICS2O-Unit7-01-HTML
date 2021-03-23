@@ -14,19 +14,19 @@ function generate () {
   randNumb = Math.floor(Math.random() * 6) + 1
   randNumb = parseInt(randNumb)
   // This script will need to compare the numbers, so it needs if statements.
-  if (userNumb == randNumb) {
+  if (userNumb === randNumb) {
     document.getElementById('results').innerHTML = 'Numbers matched! You win!'
   }
-  if (userNumb != randNumb) {
+  if (userNumb !== randNumb) {
     document.getElementById('results').innerHTML = 'The numbers did not match! Try a different number.'
   }
 }
 
 function repeat () {
-  if (userNumb != randNumb) {
+  if (userNumb !== randNumb) {
     document.getElementById('results').innerHTML = ' '
   }
-  if (userNumb == randNumb) {
+  if (userNumb === randNumb) {
     document.getElementById('results').innerHTML = ' '
   }
 }
